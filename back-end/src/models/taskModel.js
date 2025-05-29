@@ -6,4 +6,6 @@ const taskSchema = new mongoose.Schema({
     priority: {type: String, required: true}
 }, {versionKey: false});
 
+const task = mongoose.model("task", taskSchema);
+
 export {taskSchema};
