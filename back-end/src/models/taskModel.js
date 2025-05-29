@@ -8,4 +8,4 @@ const taskSchema = new mongoose.Schema({
 
 const task = mongoose.model("task", taskSchema);
 
-export {taskSchema};
+export default {task, taskSchema};
