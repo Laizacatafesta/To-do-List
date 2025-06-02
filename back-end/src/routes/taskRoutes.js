@@ -3,6 +3,6 @@ import TaskController from "../controllers/taskController.js";
 
 const routes  = express.Router();
 
-routes.get("/tasks", TaskController.listarTasks);
+routes.get("/task", TaskController.listarTasks);
 
 export default routes;

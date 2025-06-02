@@ -4,8 +4,9 @@ class TaskController {
 
     static async listarTasks(req, res) {
         try {
-            const listarTasks = await task.find({});
-            res.status(200).json(listarTasks);
+            const listaTasks = await task.find({});
+            console.log("Tarefas encontradas:", listaTasks);
+            res.status(200).json(listaTasks);
         } catch (erro) {
             res.status(500).json({message: `${erro.message} - Falha na requisição`});
         };

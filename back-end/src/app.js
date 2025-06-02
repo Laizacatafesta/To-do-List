@@ -10,6 +10,7 @@ conexao.on("error", (erro) => {
 
 conexao.once("open", () => {
     console.log("Conexão com o banco de dados realizada com sucesso");
+    console.log("Nome do banco:", conexao.name);
 });
 
 const app = express();
