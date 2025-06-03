@@ -5,5 +5,6 @@ const routes  = express.Router();
 
 routes.get("/task", TaskController.listarTasks);
 routes.post("/task", TaskController.criartTask);
+routes.put("/task/:id", TaskController.atualizarTask);
 
 export default routes;
