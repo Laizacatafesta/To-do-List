@@ -8,4 +8,6 @@ async function conectaNaDatabase() {
     return mongoose.connection;
 };
 
+console.log("🔧 String de conexão:", process.env.DB_CONNECTION_STRING);
 export default conectaNaDatabase;
+
