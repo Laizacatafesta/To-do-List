@@ -4,6 +4,9 @@ import ListaSuspensa from "../ListaSuspensa"
 import "./Form.css"
 
 const Form = (props) => {
+    
+    const prioridades = ["Alta", "Média", "Baixa"]
+
     return (
         <section className="formulario">
             <form>
