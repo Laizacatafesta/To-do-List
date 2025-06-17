@@ -1,9 +1,12 @@
 import Form from "./Componentes/Form";
 
 function App() {
+
+  const listsPrioridade = ["Alta", "Média", "Baixa"]
+
   return (
     <div className="App">
-      <Form/>
+      <Form prioridades={listsPrioridade}/> 
     </div>
   );
 }
