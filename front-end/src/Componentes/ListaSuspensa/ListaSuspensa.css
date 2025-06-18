@@ -2,11 +2,13 @@
     display: block;
     margin-bottom: 8px;
     font-size: 20px;
+    
 }
 
 .lista-suspensa select {
     background-color: #363636;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    color: #bbb9b9;
     width: 100%;
     border-radius: 20px;
     border: none;
