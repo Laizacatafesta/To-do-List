@@ -29,12 +29,29 @@ const Form = (props) => {
         <section className="formulario">
             <form onSubmit={aoSalvar}>
                 <h2>Preencha os dados para criar um card com tarefa e objetivo</h2>
-                <CampoTexto label="Task" placeholder="Digite aqui sua task"/>
-                <CampoTexto label="Objetivo" placeholder="Digite aqui seu objetivo"/>
+
+                <CampoTexto 
+                label="Task" 
+                placeholder="Digite aqui sua task"
+                valor={titulo}
+                aoAlterado={valor => setTitulo(valor)}
+                />
+
+                <CampoTexto 
+                label="Objetivo" 
+                placeholder="Digite aqui seu objetivo"
+                valor={objetivo}
+                aoAlterado={valor => setObjetivo(valor)}
+                />
+
                 <ListaSuspensa 
                 label="Escolha a prioridade" 
                 obrigatorio={true}
-                itens={props.prioridades}/>
+                itens={props.prioridades}
+                valor={prioridade}
+                aoAlterado={valor => setPrioridade(valor)}
+                />
+
                 <Botao>Criar Card</Botao>
             </form>
         </section>
