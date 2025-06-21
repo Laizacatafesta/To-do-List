@@ -31,6 +31,7 @@ const Form = (props) => {
                 <h2>Preencha os dados para criar um card com tarefa e objetivo</h2>
 
                 <CampoTexto 
+                obrigatorio={true}
                 label="Task" 
                 placeholder="Digite aqui sua task"
                 valor={titulo}
@@ -38,6 +39,7 @@ const Form = (props) => {
                 />
 
                 <CampoTexto 
+                obrigatorio={true}
                 label="Objetivo" 
                 placeholder="Digite aqui seu objetivo"
                 valor={objetivo}
