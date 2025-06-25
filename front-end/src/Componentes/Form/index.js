@@ -47,8 +47,8 @@ const Form = (props) => {
                 />
 
                 <ListaSuspensa 
-                label="Escolha a prioridade" 
                 obrigatorio={true}
+                label="Escolha a prioridade" 
                 itens={props.prioridades}
                 valor={prioridade}
                 aoAlterado={valor => setPrioridade(valor)}

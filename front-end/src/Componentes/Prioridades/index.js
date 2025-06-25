@@ -3,15 +3,15 @@ import "./Prioridade.css"
 
 const Prioridades = (props) => {
     return(
-        (props.task.length > 0) ? <section>
+        <section>
             <div>
                 <h3>{props.titulo}</h3>
                 <div>
-                    {props.task.map(task => <Task key={task.titulo} titulo={task.titulo} objetivo={task.objetivo}/>)}
+                <Task key={props.titulo} titulo={props.titulo} objetivo={props.objetivo}/>
                 </div>
             </div>
         </section>
-        :''
+       
     )
 }
 
