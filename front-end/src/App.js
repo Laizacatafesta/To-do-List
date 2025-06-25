@@ -1,12 +1,15 @@
+import { useState } from "react";
 import Form from "./Componentes/Form";
 import Prioridades from "./Componentes/Prioridades";
 
 function App() {
 
   const listsPrioridade = ["Alta", "Média", "Baixa"]
+
+  const [tasks, setTask] = useState([])
   
   const novaTaskCriada =(task) => {
-    
+    setTask([...tasks, task]) // Isso atualiza o estado tasks com a nova lista.
   }
 
   return (
