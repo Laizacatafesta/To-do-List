@@ -1,4 +1,5 @@
 import Form from "./Componentes/Form";
+import Prioridades from "./Componentes/Prioridades";
 
 function App() {
 
@@ -10,7 +11,10 @@ function App() {
 
   return (
     <div className="App">
-      <Form prioridades={listsPrioridade} taskCriada={task => novaTaskCriada(task)}/> 
+      <Form prioridades={listsPrioridade.map(prioridade => prioridade.titulo)} taskCriada={task => novaTaskCriada(task)}/> 
+      {listsPrioridade.map(prioridade => <Prioridades
+      titulo={prioridade.titulo}
+      />)}
     </div>
   );
 }
