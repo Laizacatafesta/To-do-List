@@ -1,6 +1,6 @@
 import "./Prioridades.css"
 
-const Prioridades = () => {
+const Prioridades = (props) => {
     return(
         <section>
             <div>
